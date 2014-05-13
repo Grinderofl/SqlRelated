@@ -1,4 +1,5 @@
 ﻿using Autofac;
+using SqlRelated.Core.Connection.Impl;
 
 namespace SqlRelated.Core
 {
@@ -7,7 +8,7 @@ namespace SqlRelated.Core
         public static IContainer Register()
         {
             var builder = new ContainerBuilder();
-            builder.RegisterAssemblyModules(typeof (Program).Assembly);
+            builder.RegisterAssemblyModules(typeof (Program).Assembly, typeof (ConnectionResolverFacility).Assembly);
             return builder.Build();
         }
     }
