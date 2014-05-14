@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SqlRelated.Properties
+namespace SqlRelated.Wpf.Properties
 {
 
 

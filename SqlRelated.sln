@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30324.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlRelated", "SqlRelated\SqlRelated.csproj", "{4F9FF293-BE9D-4798-9C3E-03A1D1F53A43}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{13A5DBF9-1D2D-4D05-A779-651A700920BB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{0DBBAD82-18B0-474E-97AD-04A197C296FB}"
@@ -16,16 +14,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{0DBBAD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlRelated.Core", "SqlRelated.Core\SqlRelated.Core.csproj", "{BA097CF1-E73D-47B8-A588-96F51E67D243}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlRelated.Wpf", "SqlRelated.Wpf\SqlRelated.Wpf.csproj", "{1237CB8E-C5D2-4F02-88D0-284C15B21DD5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4F9FF293-BE9D-4798-9C3E-03A1D1F53A43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4F9FF293-BE9D-4798-9C3E-03A1D1F53A43}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4F9FF293-BE9D-4798-9C3E-03A1D1F53A43}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4F9FF293-BE9D-4798-9C3E-03A1D1F53A43}.Release|Any CPU.Build.0 = Release|Any CPU
 		{13A5DBF9-1D2D-4D05-A779-651A700920BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{13A5DBF9-1D2D-4D05-A779-651A700920BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13A5DBF9-1D2D-4D05-A779-651A700920BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -34,6 +30,10 @@ Global
 		{BA097CF1-E73D-47B8-A588-96F51E67D243}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA097CF1-E73D-47B8-A588-96F51E67D243}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA097CF1-E73D-47B8-A588-96F51E67D243}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1237CB8E-C5D2-4F02-88D0-284C15B21DD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1237CB8E-C5D2-4F02-88D0-284C15B21DD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1237CB8E-C5D2-4F02-88D0-284C15B21DD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1237CB8E-C5D2-4F02-88D0-284C15B21DD5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

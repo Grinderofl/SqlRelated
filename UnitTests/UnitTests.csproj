@@ -64,9 +64,9 @@
       <Project>{BA097CF1-E73D-47B8-A588-96F51E67D243}</Project>
       <Name>SqlRelated.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\SqlRelated\SqlRelated.csproj">
-      <Project>{4F9FF293-BE9D-4798-9C3E-03A1D1F53A43}</Project>
-      <Name>SqlRelated</Name>
+    <ProjectReference Include="..\SqlRelated.Wpf\SqlRelated.Wpf.csproj">
+      <Project>{1237CB8E-C5D2-4F02-88D0-284C15B21DD5}</Project>
+      <Name>SqlRelated.Wpf</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

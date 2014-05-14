@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Autofac;
 using SqlRelated.Core;
+using SqlRelated.Wpf.Core;
 
 namespace UnitTests
 {
