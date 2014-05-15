@@ -52,6 +52,7 @@
     <Compile Include="Domain\Enums\AuthenticationMode.cs" />
     <Compile Include="Domain\User.cs" />
     <Compile Include="Modules\ConnectionResolverModule.cs" />
+    <Compile Include="Modules\UserBinderModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

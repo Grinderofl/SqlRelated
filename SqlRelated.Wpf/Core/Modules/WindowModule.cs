@@ -15,7 +15,7 @@ namespace SqlRelated.Wpf.Core.Modules
         {
             foreach (var window in ThisAssembly.GetExportedTypes().Where(x => x.IsSubclassOf(typeof (Window))))
             {
-                if (window.IsSubclassOf(typeof (InstancedWindow)))
+                if (!window.IsSubclassOf(typeof (InstancedWindow)))
                     builder.RegisterType(window).AsSelf().InstancePerDependency();
                 else
                     builder.RegisterType(window).AsSelf().SingleInstance();

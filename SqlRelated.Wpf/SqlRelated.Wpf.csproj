@@ -49,6 +49,12 @@
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
+    <Reference Include="UpdateControls">
+      <HintPath>..\packages\UpdateControls.2.3.1.0\lib\net45\UpdateControls.dll</HintPath>
+    </Reference>
+    <Reference Include="UpdateControls.XAML">
+      <HintPath>..\packages\UpdateControls.2.3.1.0\lib\net45\UpdateControls.XAML.dll</HintPath>
+    </Reference>
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -58,6 +64,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Windows\LoginWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Windows\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -68,7 +78,14 @@
     </Compile>
     <Compile Include="Core\Base\InstancedWindow.cs" />
     <Compile Include="Core\DependencyResolver.cs" />
+    <Compile Include="Core\Factories\Impl\WindowFactory.cs" />
+    <Compile Include="Core\Factories\IWindowFactory.cs" />
+    <Compile Include="Core\Modules\AutoInterfaceRegistrationModule.cs" />
+    <Compile Include="Core\Modules\WindowFactoryModule.cs" />
     <Compile Include="Core\Modules\WindowModule.cs" />
+    <Compile Include="Windows\LoginWindow.xaml.cs">
+      <DependentUpon>LoginWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>

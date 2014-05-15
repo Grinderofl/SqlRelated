@@ -1,0 +1,15 @@
+﻿<Window x:Class="SqlRelated.Wpf.Windows.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:SqlRelated;assembly=SqlRelated.Core"
+        xmlns:domain="clr-namespace:SqlRelated.Core.Domain;assembly=SqlRelated.Core"
+        Title="LoginWindow" Height="300" Width="300">
+    <Window.DataContext>
+        <domain:User/>
+    </Window.DataContext>
+    <Grid>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="167,215,0,0" VerticalAlignment="Top" Width="75"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="32,27,0,0" TextWrapping="Wrap" Text="{Binding Path=Username, Mode=TwoWay}" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>
